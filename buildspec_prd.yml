@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  pre-build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - cd $CODEBUILD_SRC_DIR/src && cp .env.$ENV .env
+      - npm run build
+artifacts:
+  files:
+    - "**/*"
+  base-directory: build

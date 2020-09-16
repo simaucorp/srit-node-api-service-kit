@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre-build:
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - cp .env.$ENV .env
+      - echo Testing started
+      - npm run test
+      - echo Testing finished
+      - echo Build started
+      - npm run build
+artifacts:
+  files:
+    - "**/*"
+  base-directory: build
