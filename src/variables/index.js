@@ -11,5 +11,5 @@ export default {
   appHost,
   appPort,
   logLevel,
-  loggerName
+  loggerName,
 };

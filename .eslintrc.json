@@ -10,13 +10,12 @@
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 2020
   },
   "rules": {
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
-    "comma-dangle": ["error", "never"],
     "no-plusplus": [2, { "allowForLoopAfterthoughts": true }]
   }
 }

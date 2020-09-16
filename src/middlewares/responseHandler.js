@@ -1,5 +1,3 @@
-import apiInfo from "../../package.json";
-
 const statusCodes = {
   CONTINUE: 100,
   OK: 200,
@@ -17,7 +15,7 @@ const statusCodes = {
   BAD_GATEWAY: 502,
   SERVICE_UNAVAILABLE: 503,
   GATEWAY_TIME_OUT: 504,
-  CONFLICT: 409
+  CONFLICT: 409,
 };
 
 function responseHandler() {

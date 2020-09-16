@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 import Koa from "koa";
 import koaBody from "koa-body";
 import cors from "koa2-cors";
@@ -9,10 +7,11 @@ import variables from "./variables";
 import {
   log as logMiddleware,
   responseHandler,
-  requestId
+  requestId,
 } from "./middlewares";
-
 import router from "./router";
+
+require("dotenv").config();
 
 const app = new Koa();
 

@@ -6,9 +6,9 @@ module.exports = {
       "@babel/preset-env",
       {
         targets: {
-          node: pkg.engines.node
-        }
-      }
-    ]
-  ]
+          node: pkg.engines.node,
+        },
+      },
+    ],
+  ],
 };
